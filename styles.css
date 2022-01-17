@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+    /* footer support */
+    position: relative;
+    min-height: 100%;
+  }
+  
+  body {
+    background-color: #218c74;
+    color: #f7f1e3;
+    font-family:Helvetica, sans-serif;
+    line-height: 1.6;
+    }
+
+h1 {
+    font-size: 3rem;
+    color: #ffb142;
+    font-family: 'Dancing Script', cursive;
+}
+
+.top{
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-direction: column;
+    margin-bottom: 35px;
+}
+
+.bevel {
+    margin-top: 100px;
+    height: 500px;
+    width: 500px;
+    background-color: #ff5252;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.canvas {
+    height: 320px;
+    width: 320px;
+    background-color: #f7f1e315;
+    display: grid;
+    grid-template-columns: repeat(16, 20px [col-start]);
+}
+
+.square{
+    height: 20px;
+    width: 20px;
+    background: white;
+}
+
+.square:hover {
+    background: #2c2c54;
+}
+
+.knob {
+    display: flex;
+    background-color: white;
+    border-radius: 100%;
+    width: 75px;
+    height: 75px;
+    margin: 0 15px;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+.knobs {
+    display: flex;
+    justify-content:space-between;
+    width: 500px;
+}
+
+.dial {
+    width: 10px;
+    height: 10px;
+    background-color: #d1ccc0;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
