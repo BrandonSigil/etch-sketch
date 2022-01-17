@@ -13,7 +13,7 @@
 <body>
 
     <div class="top" id="top">
-        <div class="bevel">
+        <div class="bevel" id="bevel">
             <h1>Etch O' Sketch</h1>
             <div class="canvas" id="canvas"> </div>
             <div class="knobs" id="knobs">
@@ -23,12 +23,19 @@
                 <div class="knob">
                     <div class="dial"></div>
                 </div>
-
             </div>
         </div>
+        
     </div>
 
-    <div id="container"></div>
+    <div class="styleSetup">
+        <div class="slidecontainer">
+            <input type="range" min="1" max="64" value="24" class="slider" id="myRange">
+            <p>Value: <span id="demo"></span></p>
+          </div>
+        <button class="btn" id="btn">Reset</button>
+
+    </div>
 
     <script src="script.js" ></script>
 
